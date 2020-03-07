@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png" sizes="32x32">
+</head>
+<body>
+    <header>
+        <img src="img/icon.png" alt="Calculator" sizes="60x60">
+        <h1>Miguel's Calculator</h1>
+    </header>
+    <hr>
+    <section id="consoles">
+        <p id="parameters"><span id="operation"></span>0</p>
+    </section>
+    <section id="buttons">
+        <table>
+            <tr>
+                <td><input type="button" id="CE" value="CE" style="background-color: red;"onclick="clearNumbers()"></td>
+                <td><input type="button" id="CE" value="<-" onclick="deleteNumbers()"></td>
+                <td></td>
+                <td><input type="button" id="/" value="/" onclick="printOperator('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="1" value="1" onclick="printNum1(1)"></td>
+                <td><input type="button" id="2" value="2" onclick="printNum1(2)"></td>
+                <td><input type="button" id="3" value="3" onclick="printNum1(3)"></td>
+                <td><input type="button" id="*" value="x" onclick="printOperator('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="4" value="4" onclick="printNum1(4)"></td>
+                <td><input type="button" id="5" value="5" onclick="printNum1(5)"></td>
+                <td><input type="button" id="6" value="6" onclick="printNum1(6)"></td>
+                <td><input type="button" id="-" value="-" onclick="printOperator('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="7" value="7" onclick="printNum1(7)"></td>
+                <td><input type="button" id="8" value="8" onclick="printNum1(8)"></td>
+                <td><input type="button" id="9" value="9" onclick="printNum1(9)"></td>
+                <td><input type="button" id="+" value="+" onclick="printOperator('+')"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" id="0" value="0" onclick="printNum1(0)"></td>
+                <td></td>
+                <td><input type="button" id="=" value="=" style="background-color:chartreuse; color: black;" onclick="getTheParameters()"></td>
+            </tr>
+        </table>
+    </section>
+    <script src="js/Data.js"></script>
+    <script src="js/App-buttons.js"></script>
+    <script src="js/App-math.js"></script>
+    
+
+</body>
+</html>
