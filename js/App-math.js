@@ -31,12 +31,9 @@ function calculator(num1, num2, operatorSelected){
         result = num1 / num2;
         break;
     }
-    let response = `${num1} ${operatorSelected} ${num2} = ${result}`;
-    //let oper;
+    let response = `${result}`;
+    let oper = `${num1} ${operatorSelected} ${num2} =`
     parameters.innerHTML = response;
+    document.querySelector("#operation").innerHTML = oper;
     equals++;
-
-    /*    let oper = `${num1} ${operatorSelected} ${num2}`;
-    document.querySelector("#operation").innerHTML = oper ;
-    equals++;*/
   };

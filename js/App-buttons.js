@@ -15,8 +15,10 @@ function printNum1(num){
 
 var operatorSelected= "";
 function printOperator(oper){
-  parameters.innerHTML += oper;
-  operatorSelected = oper;
+  if (equals === 0){ 
+    parameters.innerHTML += oper;
+    operatorSelected = oper;
+  }
 };
 
 
@@ -42,6 +44,7 @@ function separateParameters(str){
 };
 
 function clearNumbers(){
+  operation.innerHTML = "";
   parameters.innerHTML = 0;
   count = 0;
   equals = 0;
